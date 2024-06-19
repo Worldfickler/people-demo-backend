@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://mysql:3306/demo
+    url: jdbc:mysql://121.37.242.83:3306/demo
+#    url: jdbc:mysql://localhost:3306/demo
+    username: root
+#    password: '011216'
+    password: '123456'
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+
+knife4j:
+  enable: true

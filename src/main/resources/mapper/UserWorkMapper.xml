@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.peopledemo.mapper.UserWorkMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.peopledemo.entiy.UserWorkEntity">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="userId" column="userId" jdbcType="VARCHAR"/>
+            <result property="roleId" column="roleId" jdbcType="VARCHAR"/>
+            <result property="departmentId" column="departmentId" jdbcType="VARCHAR"/>
+            <result property="postId" column="postId" jdbcType="VARCHAR"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userId,roleId,
+        departmentId,postId,createTime,
+        updateTime,isDelete,status
+    </sql>
+</mapper>
